@@ -1,0 +1,22 @@
+{
+  "name": "monorepo-02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/lodash"
+    ]
+  },
+  "scripts": {
+    "start": "icons",
+    "lerna": "lerna"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@fgr-monorepo/components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lodash": "^3",
+    "react": "^17.0.2"
+  }
+}

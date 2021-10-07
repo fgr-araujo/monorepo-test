@@ -1,0 +1,17 @@
+{
+  "name": "@fgr-monorepo/icons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "16"
+  }
+}
