@@ -13,5 +13,6 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "react": "16"
-  }
+  },
+  "gitHead": "2704265c846953bd70c294051e37d29c0306ccbd"
 }
