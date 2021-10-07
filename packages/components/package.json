@@ -1,5 +1,5 @@
 {
-  "name": "@fgr-monorepo/components",
+  "name": "@monorepo-test/components",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
