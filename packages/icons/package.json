@@ -1,6 +1,6 @@
 {
   "name": "@monorepo-test/icons",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
   "bin": "./index.js",
@@ -14,5 +14,5 @@
     "lodash": "^4.17.21",
     "react": "16"
   },
-  "gitHead": "13470fd864679c0e01a3ea8902d40ea57ce5be4b"
+  "gitHead": "39d73f0af4deb7d2fcd1723508fbb3bdfbca56c5"
 }
