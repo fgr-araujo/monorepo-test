@@ -1,0 +1,129 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /home/fgr/dev/Study/monorepo-02
+3 info versioning independent
+4 verbose session f6865bfa0c995f4b
+5 verbose user-agent lerna/4.0.0/node@v14.17.3+x64 (linux)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '4.0.0' }
+7 verbose rootPath /home/fgr/dev/Study/monorepo-02
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch main
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "@monorepo-test/components@1.0.2-1-g22a09ec" => {"lastTagName":"@monorepo-test/components@1.0.2","lastVersion":"1.0.2","refCount":"1","sha":"22a09ec","isDirty":false}
+18 info Looking for changed packages since @monorepo-test/components@1.0.2
+19 silly checking diff packages/components
+20 silly found diff in packages/components/package.json
+21 verbose filtered diff [ 'packages/components/package.json' ]
+22 silly checking diff packages/icons
+23 silly found diff in packages/icons/package.json
+24 verbose filtered diff [ 'packages/icons/package.json' ]
+25 verbose updated @monorepo-test/components
+26 verbose updated @monorepo-test/icons
+27 verbose git-describe undefined => "@monorepo-test/components@1.0.2-1-g22a09ec"
+28 silly git-describe parsed => {"lastTagName":"@monorepo-test/components@1.0.2","lastVersion":"1.0.2","refCount":"1","sha":"22a09ec","isDirty":false}
+29 info execute Skipping releases
+30 silly lifecycle No script for "preversion" in "monorepo-test", continuing
+31 silly lifecycle No script for "preversion" in "@monorepo-test/components", continuing
+32 silly lifecycle No script for "preversion" in "@monorepo-test/icons", continuing
+33 silly lifecycle No script for "version" in "@monorepo-test/icons", continuing
+34 silly lifecycle No script for "version" in "@monorepo-test/components", continuing
+35 silly lifecycle No script for "version" in "monorepo-test", continuing
+36 silly gitAdd [ 'packages/icons/package.json', 'packages/components/package.json' ]
+37 silly gitCommit Publish
+37 silly gitCommit
+37 silly gitCommit  - @monorepo-test/components@1.0.3
+37 silly gitCommit  - @monorepo-test/icons@1.0.3
+38 verbose git [
+38 verbose git   'commit',
+38 verbose git   '-F',
+38 verbose git   '/tmp/768b4543-946d-40ad-bdcb-5734e3f00eb5/lerna-commit.txt'
+38 verbose git ]
+39 silly gitTag @monorepo-test/components@1.0.3
+40 verbose git [
+40 verbose git   'tag',
+40 verbose git   '@monorepo-test/components@1.0.3',
+40 verbose git   '-m',
+40 verbose git   '@monorepo-test/components@1.0.3'
+40 verbose git ]
+41 silly gitTag @monorepo-test/icons@1.0.3
+42 verbose git [
+42 verbose git   'tag',
+42 verbose git   '@monorepo-test/icons@1.0.3',
+42 verbose git   '-m',
+42 verbose git   '@monorepo-test/icons@1.0.3'
+42 verbose git ]
+43 silly lifecycle No script for "postversion" in "@monorepo-test/components", continuing
+44 silly lifecycle No script for "postversion" in "@monorepo-test/icons", continuing
+45 silly lifecycle No script for "postversion" in "monorepo-test", continuing
+46 info git Pushing tags...
+47 silly gitPush origin main
+48 info publish Publishing packages to npm...
+49 notice Skipping all user and access validation due to third-party registry
+50 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+51 warn ENOLICENSE Packages @monorepo-test/components and @monorepo-test/icons are missing a license.
+51 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+51 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+52 silly getCurrentSHA
+53 verbose getCurrentSHA 5c95474fa7dff1a7aa25427da4956976b41bc131
+54 silly lifecycle No script for "prepublish" in "monorepo-test", continuing
+55 silly lifecycle No script for "prepare" in "monorepo-test", continuing
+56 silly lifecycle No script for "prepublishOnly" in "monorepo-test", continuing
+57 silly lifecycle No script for "prepack" in "monorepo-test", continuing
+58 verbose pack-directory packages/components
+59 verbose pack-directory packages/icons
+60 silly lifecycle No script for "prepublish" in "@monorepo-test/components", continuing
+61 silly lifecycle No script for "prepublish" in "@monorepo-test/icons", continuing
+62 silly lifecycle No script for "prepare" in "@monorepo-test/components", continuing
+63 silly lifecycle No script for "prepare" in "@monorepo-test/icons", continuing
+64 silly lifecycle No script for "prepublishOnly" in "@monorepo-test/components", continuing
+65 silly lifecycle No script for "prepublishOnly" in "@monorepo-test/icons", continuing
+66 silly lifecycle No script for "prepack" in "@monorepo-test/components", continuing
+67 silly lifecycle No script for "prepack" in "@monorepo-test/icons", continuing
+68 silly lifecycle No script for "postpack" in "@monorepo-test/components", continuing
+69 verbose packed packages/components
+70 silly lifecycle No script for "postpack" in "@monorepo-test/icons", continuing
+71 verbose packed packages/icons
+72 silly lifecycle No script for "postpack" in "monorepo-test", continuing
+73 verbose publish @monorepo-test/components
+74 verbose publish @monorepo-test/icons
+75 silly FetchError: request to https://registry.npm.fgraraujo.com/@monorepo-test%2ficons failed, reason: getaddrinfo ENOTFOUND registry.npm.fgraraujo.com
+75 silly     at ClientRequest.<anonymous> (/home/fgr/dev/Study/monorepo-02/node_modules/minipass-fetch/lib/index.js:110:14)
+75 silly     at ClientRequest.emit (events.js:375:28)
+75 silly     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+75 silly     at TLSSocket.emit (events.js:387:35)
+75 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+75 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+75 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21)
+75 silly  FetchError: request to https://registry.npm.fgraraujo.com/@monorepo-test%2ficons failed, reason: getaddrinfo ENOTFOUND registry.npm.fgraraujo.com
+75 silly     at ClientRequest.<anonymous> (/home/fgr/dev/Study/monorepo-02/node_modules/minipass-fetch/lib/index.js:110:14)
+75 silly     at ClientRequest.emit (events.js:375:28)
+75 silly     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+75 silly     at TLSSocket.emit (events.js:387:35)
+75 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+75 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+75 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+75 silly   code: 'ENOTFOUND',
+75 silly   errno: 'ENOTFOUND',
+75 silly   syscall: 'getaddrinfo',
+75 silly   hostname: 'registry.npm.fgraraujo.com',
+75 silly   type: 'system'
+75 silly }
+76 error ENOTFOUND request to https://registry.npm.fgraraujo.com/@monorepo-test%2ficons failed, reason: getaddrinfo ENOTFOUND registry.npm.fgraraujo.com
+77 error FetchError: request to https://registry.npm.fgraraujo.com/@monorepo-test%2ficons failed, reason: getaddrinfo ENOTFOUND registry.npm.fgraraujo.com
+77 error     at ClientRequest.<anonymous> (/home/fgr/dev/Study/monorepo-02/node_modules/minipass-fetch/lib/index.js:110:14)
+77 error     at ClientRequest.emit (events.js:375:28)
+77 error     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+77 error     at TLSSocket.emit (events.js:387:35)
+77 error     at emitErrorNT (internal/streams/destroy.js:106:8)
+77 error     at emitErrorCloseNT (internal/streams/destroy.js:74:3)

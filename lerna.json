@@ -1,5 +1,10 @@
 {
   "useWorkspaces": true,
   "npmCLient": "yarn",
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "publish": {
+      "registry": "https://npm.pkg.github.com"
+    }
+  }
 }
